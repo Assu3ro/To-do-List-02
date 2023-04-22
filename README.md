@@ -1,4 +1,6 @@
+
 # Lista de Tarefa / To do List
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=5000&pause=1000&color=9046FF&width=435&lines=To+do+List+02!!)<br>
 <br><br>
 Sejam bem vindos ao 'To do List', meu segundo projeto usando o Framework Angular, com TypeScript. <br>
 <br>
