@@ -1,0 +1,103 @@
+/* Estilos para o corpo da página */
+body {
+  background: linear-gradient(to right, #f0eae1, #c3b7a3);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/* Estilos para o título da navbar */
+.navbar-brand {
+  font-size: 30px;
+  color: #000;
+}
+
+/* Estilos para o container principal */
+.container {
+  margin-top: 50px;
+}
+
+/* Estilos para os botões primários e secundários */
+.btn-primary,
+.btn-secondary {
+  background-color: #e0c38e;
+  border-color: #e0c38e;
+  color: #000;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #d1ad71;
+  border-color: #d1ad71;
+  color: #000;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #b3925d;
+  border-color: #b3925d;
+  color: #000;
+}
+
+/* Estilos específicos para o botão secundário */
+.btn-secondary {
+  background-color: #8a6c42;
+  border-color: #8a6c42;
+  color: #fff;
+}
+
+/* Estilos para os itens de tarefa */
+.task-item {
+  margin-bottom: 10px;
+}
+
+.task-item .task-name {
+  font-size: 20px;
+  color: #000;
+}
+
+.task-item .task-status {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.task-item .task-status.done {
+  color: green;
+}
+
+.task-item .task-status.pending {
+  color: red;
+}
+
+/* Estilos para o formulário de adição de tarefas */
+.add-task-form {
+  margin-top: 30px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+  background-color: #2b2b2b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #fff;
+  font-weight: bold;
+}

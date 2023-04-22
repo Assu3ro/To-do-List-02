@@ -1,0 +1,197 @@
+/* Estilos para o corpo da página */
+body {
+  background-image: linear-gradient(to bottom, #262626, #001b34, #001f3f);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+  background-image: linear-gradient(to bottom, #1a1a1a, #00111f, #00161f);
+  color: #eee;
+}
+
+/* Estilos para o botão de "modo dark" */
+.btn-dark-mode {
+  background-color: transparent;
+  border: none;
+  color: #ee7f00;
+  transition: color 0.3s ease;
+  padding: 0;
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.btn-dark-mode:before {
+  content: "On";
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background-color: #001f3f;
+  color: #fff;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark-mode:after {
+  content: "Off";
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  color: #001f3f;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark-mode:hover:before,
+.btn-dark-mode:focus:before {
+  transform: translateX(40px);
+}
+
+.btn-dark-mode:hover:after,
+.btn-dark-mode:focus:after {
+  transform: translateX(-40px);
+}
+
+.btn-dark-mode:active:before,
+.btn-dark-mode.active:before {
+  transform: translateX(40px);
+}
+
+.btn-dark-mode:active:after,
+.btn-dark-mode.active:after {
+  transform: translateX(-40px);
+}
+
+.btn-dark-mode.dark-mode {
+  color: #001f3f;
+}
+
+.btn-dark-mode.dark-mode:before {
+  transform: translateX(0);
+  left: auto;
+  right: 0;
+  color: #fff;
+}
+
+.btn-dark-mode.dark-mode:after {
+  transform: translateX(0);
+  left: 0;
+  right: auto;
+  color: #001f3f;
+}
+
+
+/* Estilos para o título da navbar */
+.navbar-brand {
+  font-size: 30px;
+  color: #ee7f00;
+}
+
+/* Estilos para o container principal */
+.container {
+  margin-top: 50px;
+}
+
+/* Estilos para os botões primários e secundários */
+.btn-primary,
+.btn-secondary {
+  background-color: #ee7f00;
+  border-color: #ee7f00;
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #ff9f00;
+  border-color: #ff9f00;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #cc6b00;
+  border-color: #cc6b00;
+}
+
+/* Estilos específicos para o botão secundário */
+.btn-secondary {
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+/* Estilos para os itens de tarefa */
+.task-item {
+  margin-bottom: 10px;
+}
+
+.task-item .task-name {
+  font-size: 20px;
+  color: #eee;
+}
+
+.task-item .task-status {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.task-item .task-status.done {
+  color: #3fd141;
+}
+
+.task-item .task-status.pending {
+  color: #ff4d4d;
+}
+
+/* Estilos para o formulário de adição de tarefas */
+.add-task-form {
+  margin-top: 30px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+  background-image: linear-gradient(to right, #001f3f, #000000);
+  color: #eee;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #fff;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #001f3f, #000000);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.footer a:hover {
+  background-image: linear-gradient(to right, #000000, #001f3f);
+}
